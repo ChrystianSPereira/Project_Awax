@@ -159,7 +159,7 @@ header{
 
 .banner .sliders-contact{
     position: absolute;
-    margin-top: 515px;
+    margin-top: calc(83vh + 2px);
     margin-left: calc(85vw - 60px);
 }
 
