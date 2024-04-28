@@ -120,7 +120,7 @@ header{
     margin-top: 30px;
 }
 
-.banner .button {
+.banner .slide-area .button {
     display: block;
     background-color: var(--primary-cor);
     color: #fff;
@@ -133,7 +133,7 @@ header{
     border-radius: 20px;
 }
 
-.banner a:hover{
+.banner .slide-area .button:hover{
     background-color: var(--secondy--cor-hover);
 }
 
@@ -191,7 +191,7 @@ header{
 
 /* ABOUT US */
 .default{
-    padding: 50px 0px 50px 0px;
+    padding: 50px 0px 40px 0px;
 }
 
 .default .section-title,
@@ -237,7 +237,7 @@ header{
     color: #fff;
 }
 
-.default .section-body .button{
+.default .section-body .section-aboutus--left .button{
     display: inline-block;
     color: #FFF;
     padding: 15px 30px 15px 30px;
@@ -246,7 +246,7 @@ header{
     text-decoration: none;
 } 
 
-.default .section-body .button:hover{
+.default .section-body .section-aboutus--left .button:hover{
     background-color: var(--secondy--cor-hover);
 }
 
@@ -372,7 +372,66 @@ header{
     height: inherit;
 }
 
-/* EMPTY */
+.sections-projects-photos .sections-projects-photo .sections-projects-photoarea:hover .sections-projects-photoinfo{
+    display: flex;
+}
+
+.sections-projects-photos .sections-projects-photo .sections-projects-photoinfo{
+    position: absolute;
+    background-color: rgba(0, 0,0, 0.5);
+    width: inherit;
+    height: inherit;
+    text-align: center;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+}
+
+.sections-projects-photos .sections-projects-photo .sections-projects-photoinfo h3{
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.sections-projects-photos .sections-projects-photo .sections-projects-photoinfo p{
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+.sections-projects-photos .button {
+    display: block;
+    background-color: var(--primary-cor);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
+.sections-projects-photos .button:hover{
+    background-color: var(--secondy--cor-hover);
+}
+
+/* TEAM */
+.bg-team{
+    background-image: url(../assets/complements/foto5.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+}
+
+.section-team-area {
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 50px 0px 50px 0px;
+}
+
+
+
+
 /* EMPTY */
 /* EMPTY */
 /* EMPTY */
