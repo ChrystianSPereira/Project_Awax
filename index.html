@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, minimun-scale=1 initial-scale=1.0">
     <title>Projeto Awax</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,8 +10,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script type="text/javascript">
+        window.onload = function()
+        {
+            document.querySelector(".menu-open").addEventListener("click", function()
+            {
+                if(document.querySelector("nav").style.display == 'flex')
+                {
+                    document.querySelector("nav").style.display = 'none';
+                }
+                else
+                {
+                    document.querySelector("nav").style.display = 'flex';
+                }
+            })
+        };
+    </script>
 </head>
-
 <body>
     <header>
         <div class="header">
@@ -20,6 +34,7 @@
                 <a href=""><img src="assets/complements/awax.png" alt="Logo"></a>
             </div>
             <div class="menu">
+                <i class="fa-solid fa-bars fa-3x menu-open"></i>
                 <nav>
                     <ul>
                         <li class="active"><a href="">Home</a></li>
@@ -125,7 +140,7 @@
         <section class="default light">
             <div class="section-title">Our projects</div>
             <div class="section-desc">What we create</div>
-            <div class="section-body">
+            <div class="section-body flex-column">
                 <div class="section-projects">
                     <div class="section-projects-filters">
                         <ul>
@@ -247,8 +262,8 @@
                             <img src="assets/complements/foto6.jpg" alt="">
                         </div>
                     </div>
-                    <a href="" class="button">More Projects</a>
                 </div>
+                <a href="" class="buttonPhoto">More Projects</a>
             </div>
         </section>
         <section class="default dark bg-team">
@@ -327,7 +342,7 @@
                                     rhoncus vel dictum vel, dignissim eget ligula. Vestibulum id tempus quam, sed
                                     pellentesque quam.</div>
                             </div>
-                        </div>
+                        </div>                   
                         <div class="slide">
                             <div class="slidearea">
                                 <img class="section-clients-avatar" src="./assets/complements/homem2.png" />
